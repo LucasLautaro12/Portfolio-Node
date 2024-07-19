@@ -1,9 +1,15 @@
 body{
     background: #FDF0AC;
+    align-items: center;
+    justify-content: center;
 }
 
 .bg-black {
     background: #000;
+}
+
+footer{
+    background: #EAD66B;
 }
 
 .card-project:hover{
@@ -18,4 +24,86 @@ body{
     padding: 10px; /* Optional: Padding inside the row */
 }
 
-  
+form{
+    padding: 60px 55x;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 500px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+h2{
+    color:#283629;
+    font-size: 35px;
+}
+
+.stringContact{
+    color:#283629;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 40px;
+    margin-bottom: 15px;
+    
+}
+
+input, textarea {
+    margin-left: 25px;
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #EDFFF0;
+    border: 2px solid #F0FAF1;
+    color: #283629;
+    outline: none;
+    width: calc(100% - 50px); /* Ajusta el ancho menos los márgenes */
+}
+
+input::placeholder, textarea::placeholder{
+    color: #b5cab6;
+}
+
+.btnForm{
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 25px;
+    background-color: #dfc635;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.2);
+    cursor: pointer;
+}
+
+.btnForm:hover{
+    background-color: #f0d642;
+}
+
+@media(max-width:991px) {
+    body{
+        padding: 30px;
+    }   
+    form{
+        padding: 50px 30px;
+        width: 100%;
+    }
+    input{
+        padding: 15px;
+    }
+}
+
+.custom-card{
+    border: 1px solid #000;
+    overflow: hidden;
+    transition: transform 0.2s, z-index 0.2s;
+    position: relative;
+    z-index: 1;
+}
+
+.custom-card:hover{
+    transform: scale(1.10);
+    z-index: 10;
+}
