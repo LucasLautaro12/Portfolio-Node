@@ -8,6 +8,14 @@ body{
     background: #000;
 }
 
+.content-section {
+    margin-top: 60px;
+}
+
+.skills-section{
+    padding-top: 60px;
+}
+
 footer{
     background: #EAD66B;
 }
@@ -20,8 +28,8 @@ footer{
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px; /* Space between rows */
-    padding: 10px; /* Optional: Padding inside the row */
+    margin-top: 20px; 
+    padding: 10px; 
 }
 
 form{
@@ -61,7 +69,7 @@ input, textarea {
     border: 2px solid #F0FAF1;
     color: #283629;
     outline: none;
-    width: calc(100% - 50px); /* Ajusta el ancho menos los márgenes */
+    width: calc(100% - 50px); 
 }
 
 input::placeholder, textarea::placeholder{
