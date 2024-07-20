@@ -65,9 +65,9 @@ input, textarea {
     padding: 17px 25px;
     border-radius: 25px;
     margin-bottom: 20px;
-    background-color: #EDFFF0;
-    border: 2px solid #F0FAF1;
-    color: #283629;
+    background-color: #fffeed;
+    border: 2px solid #faf9f0;
+    color: #363528;
     outline: none;
     width: calc(100% - 50px); 
 }
@@ -82,7 +82,7 @@ input::placeholder, textarea::placeholder{
     border: 0;
     border-radius: 25px;
     background-color: #dfc635;
-    box-shadow: 0 0 20px rgba(25, 254, 0, 0.2);
+    box-shadow: 0 0 20px rgba(254, 246, 0, 0.7);
     cursor: pointer;
 }
 
@@ -169,4 +169,10 @@ input::placeholder, textarea::placeholder{
 
 .col-4 {
     text-align: right;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    
 }
