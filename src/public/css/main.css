@@ -29,7 +29,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px; 
-    padding: 10px; 
+    padding: 5px; 
 }
 
 form{
@@ -103,15 +103,70 @@ input::placeholder, textarea::placeholder{
     }
 }
 
-.custom-card{
+.custom-card {
     border: 1px solid #000;
     overflow: hidden;
     transition: transform 0.2s, z-index 0.2s;
     position: relative;
     z-index: 1;
+    margin: 10px;
 }
 
-.custom-card:hover{
+.custom-card img {
+    width: 100%; 
+    height: auto;
+}
+
+.custom-card:hover {
     transform: scale(1.10);
     z-index: 10;
+}
+
+.custom-card .card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-text {
+    margin-bottom: 0;
+}
+
+.btnCard {
+    color: #ffffff;
+    font-weight: bold;
+    display: block;
+    padding: 10px 12px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    outline: 0;
+    background-color: #55acee;
+    width: 100%;
+}
+
+.btnCard a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .custom-card {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 769px) {
+    .custom-card {
+        width: 330px;
+        height: 550px;
+    }
+}
+
+.col-4 {
+    text-align: right;
 }
